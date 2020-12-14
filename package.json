@@ -1,6 +1,6 @@
 {
   "name": "sommelier",
-  "version": "0.4.9",
+  "version": "0.5.0",
   "description": "Sommelier is a React-Native UI library made for WineUp.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
