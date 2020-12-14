@@ -1,0 +1,9 @@
+<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="half_grad">
+            <stop offset="50%" stop-color="yellow"/>
+            <stop offset="50%" stop-color="grey" stop-opacity="1" />
+        </linearGradient>
+    </defs>
+    <path d="M8.28103 1.61803L9.58769 5.6395L9.69995 5.98499H10.0632H14.2916L10.8708 8.4704L10.5769 8.68392L10.6891 9.02941L11.9958 13.0509L8.57493 10.5655L8.28103 10.352L7.98714 10.5655L4.56628 13.0509L5.87293 9.02941L5.98519 8.68392L5.6913 8.4704L2.27043 5.98499H6.49885H6.86212L6.97438 5.6395L8.28103 1.61803Z" stroke="#ECAB2E"/>
+</svg>

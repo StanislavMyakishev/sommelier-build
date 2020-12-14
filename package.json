@@ -1,10 +1,10 @@
 {
-  "name": "react-native-sommelier",
-  "version": "0.1.0",
-  "description": "hee hee",
+  "name": "sommelier",
+  "version": "0.4.5",
+  "description": "Sommelier is a React-Native UI library made for WineUp.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
-  "types": "lib/typescript/src/index.d.ts",
+  "types": "lib/typescript/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
   "files": [
@@ -26,7 +26,6 @@
     "prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
-    "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods"
   },
   "keywords": [
@@ -34,13 +33,16 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/ya/react-native-sommelier",
-  "author": "ya <ya@mail.ru> (https://github.com/ya)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ya/react-native-sommelier/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microservices-course-itmo/sommelier.git"
   },
-  "homepage": "https://github.com/ya/react-native-sommelier#readme",
+  "author": "microservices-course-itmo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/microservices-course-itmo/sommelier/issues"
+  },
+  "homepage": "https://github.com/microservices-course-itmo/sommelier#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
@@ -49,6 +51,8 @@
     "@types/jest": "^26.0.0",
     "@types/react": "^16.9.19",
     "@types/react-native": "0.62.13",
+    "@types/react-dom": "^17.0.0",
+    "@types/styled-components": "^5.1.4",
     "commitlint": "^8.3.5",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -59,6 +63,8 @@
     "prettier": "^2.0.5",
     "react": "16.11.0",
     "react-native": "0.62.2",
+    "react-native-svg": "12.1.0",
+    "styled-components": "5.2.1",
     "release-it": "^13.5.8",
     "typescript": "^3.8.3"
   },
@@ -75,7 +81,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS --no-verify",
       "pre-commit": "yarn lint && yarn typescript"
     }
   },
