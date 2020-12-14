@@ -1,6 +1,6 @@
 {
   "name": "sommelier",
-  "version": "0.4.5",
+  "version": "0.4.",
   "description": "Sommelier is a React-Native UI library made for WineUp.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -81,7 +81,6 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS --no-verify",
       "pre-commit": "yarn lint && yarn typescript"
     }
   },
